@@ -5,5 +5,5 @@
 
 if [[ $TRAVIS_BRANCH == 'company-A' ]]
 then
-    ./terraform-linux apply --auto-approve
+    ./terraform-linux apply -auto-approve
 fi 
