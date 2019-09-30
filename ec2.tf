@@ -1,5 +1,5 @@
 resource "aws_instance" "PublicEC2" {
-  ami = "ami-046a1b56e73cdd0e2" 
+  ami = "ami-061080322a4ff47bb" 
   instance_type = "t2.micro"
   vpc_security_group_ids = ["${aws_security_group.allow_ssh_http.id}"]
   subnet_id = "${aws_subnet.PublicSubnet.id}"
