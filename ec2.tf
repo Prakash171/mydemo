@@ -5,7 +5,7 @@ resource "aws_instance" "PublicEC2" {
   subnet_id = "${aws_subnet.PublicSubnet.id}"
   key_name = "sai-key-pair"
   tags = {
-    Name = "WebApp-Server-TF-A"
+    Name = "WebApp-Server-TF-company-A"
   }
 
   user_data = <<-EOF
