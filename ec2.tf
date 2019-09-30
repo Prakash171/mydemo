@@ -1,11 +1,11 @@
 resource "aws_instance" "PublicEC2" {
-  ami = "ami-061080322a4ff47bb" 
+  ami = "ami-03e8b532ee161f6cd" 
   instance_type = "t2.micro"
   vpc_security_group_ids = ["${aws_security_group.allow_ssh_http.id}"]
   subnet_id = "${aws_subnet.PublicSubnet.id}"
   key_name = "sai-key-pair"
   tags = {
-    Name = "WebApp-Server-TF"
+    Name = "WebApp-Server-TF-B"
   }
 
   user_data = <<-EOF
